@@ -1,0 +1,834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FB6519C19B46892ACED71EA /* libPods-AIFMapLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD65BE697F1389FE5B1A516 /* libPods-AIFMapLib.a */; };
+		598210AA23F38DC600183E7A /* AIFBaselandDistrictsAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 598210A523F38DC500183E7A /* AIFBaselandDistrictsAnnotation.m */; };
+		598210AB23F38DC600183E7A /* AIFBaselandDistrictsBaselandAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 598210A623F38DC500183E7A /* AIFBaselandDistrictsBaselandAnnotation.m */; };
+		598210AC23F38DC600183E7A /* AIFBaselandDistrictsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 598210A823F38DC600183E7A /* AIFBaselandDistrictsModel.m */; };
+		598210AF23F38DFB00183E7A /* AIFBaseLandDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 598210AE23F38DFB00183E7A /* AIFBaseLandDetailModel.m */; };
+		598210B423F38E3F00183E7A /* AIFBaselandAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 598210B023F38E3F00183E7A /* AIFBaselandAnnotationView.m */; };
+		598210B523F38E3F00183E7A /* AIFDistrictsAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 598210B123F38E3F00183E7A /* AIFDistrictsAnnotationView.m */; };
+		598210C923F3D19500183E7A /* AIFPolygonDrawingMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 598210C623F3D19400183E7A /* AIFPolygonDrawingMapView.m */; };
+		598210CD23F3D1A300183E7A /* AIIFPolygonDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 598210CC23F3D1A300183E7A /* AIIFPolygonDrawingViewController.m */; };
+		598210D023F3D28300183E7A /* AIFDrawBasePointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 598210CF23F3D28300183E7A /* AIFDrawBasePointView.m */; };
+		598210D323F3D2FB00183E7A /* AIFBaseDrawViewStateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 598210D223F3D2FB00183E7A /* AIFBaseDrawViewStateObject.m */; };
+		598210D623F3E3C000183E7A /* AIFBaseMapDrawTopInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 598210D523F3E3C000183E7A /* AIFBaseMapDrawTopInfoView.m */; };
+		598210DA23F3EB1600183E7A /* UIConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 598210D923F3EB1600183E7A /* UIConfig.m */; };
+		598210DD23F404BE00183E7A /* AIFLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 598210DC23F404BE00183E7A /* AIFLocationManager.m */; };
+		AF26E8B023CD57BE00F4FAD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26E8AF23CD57BE00F4FAD6 /* AppDelegate.m */; };
+		AF26E8B623CD57BE00F4FAD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26E8B523CD57BE00F4FAD6 /* ViewController.m */; };
+		AF26E8BB23CD57BF00F4FAD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF26E8BA23CD57BF00F4FAD6 /* Assets.xcassets */; };
+		AF26E8BE23CD57BF00F4FAD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF26E8BC23CD57BF00F4FAD6 /* LaunchScreen.storyboard */; };
+		AF26E8C123CD57BF00F4FAD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26E8C023CD57BF00F4FAD6 /* main.m */; };
+		AF26E8CB23CD57BF00F4FAD6 /* AIFMapLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26E8CA23CD57BF00F4FAD6 /* AIFMapLibTests.m */; };
+		AF26E8D623CD57BF00F4FAD6 /* AIFMapLibUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26E8D523CD57BF00F4FAD6 /* AIFMapLibUITests.m */; };
+		AF26E8EF23CD914300F4FAD6 /* AIFDistributionMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26E8EE23CD914300F4FAD6 /* AIFDistributionMapViewController.m */; };
+		AF26E8F423CDA92400F4FAD6 /* AIFDistributionMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26E8F223CDA92400F4FAD6 /* AIFDistributionMapView.m */; };
+		AF26E8F523CDA92400F4FAD6 /* AIFMapTypeSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26E8F323CDA92400F4FAD6 /* AIFMapTypeSelectView.m */; };
+		AF26E8F923CDA95900F4FAD6 /* AIFMapTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26E8F823CDA95900F4FAD6 /* AIFMapTool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF26E8C723CD57BF00F4FAD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF26E8A323CD57BE00F4FAD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF26E8AA23CD57BE00F4FAD6;
+			remoteInfo = AIFMapLib;
+		};
+		AF26E8D223CD57BF00F4FAD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF26E8A323CD57BE00F4FAD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF26E8AA23CD57BE00F4FAD6;
+			remoteInfo = AIFMapLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07EA758D9D7D06694296E504 /* Pods-AIFMapLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIFMapLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-AIFMapLib/Pods-AIFMapLib.release.xcconfig"; sourceTree = "<group>"; };
+		598210A423F38DC500183E7A /* AIFBaselandDistrictsAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFBaselandDistrictsAnnotation.h; sourceTree = "<group>"; };
+		598210A523F38DC500183E7A /* AIFBaselandDistrictsAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFBaselandDistrictsAnnotation.m; sourceTree = "<group>"; };
+		598210A623F38DC500183E7A /* AIFBaselandDistrictsBaselandAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFBaselandDistrictsBaselandAnnotation.m; sourceTree = "<group>"; };
+		598210A723F38DC600183E7A /* AIFBaselandDistrictsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFBaselandDistrictsModel.h; sourceTree = "<group>"; };
+		598210A823F38DC600183E7A /* AIFBaselandDistrictsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFBaselandDistrictsModel.m; sourceTree = "<group>"; };
+		598210A923F38DC600183E7A /* AIFBaselandDistrictsBaselandAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFBaselandDistrictsBaselandAnnotation.h; sourceTree = "<group>"; };
+		598210AD23F38DFA00183E7A /* AIFBaseLandDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIFBaseLandDetailModel.h; sourceTree = "<group>"; };
+		598210AE23F38DFB00183E7A /* AIFBaseLandDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIFBaseLandDetailModel.m; sourceTree = "<group>"; };
+		598210B023F38E3F00183E7A /* AIFBaselandAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFBaselandAnnotationView.m; sourceTree = "<group>"; };
+		598210B123F38E3F00183E7A /* AIFDistrictsAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFDistrictsAnnotationView.m; sourceTree = "<group>"; };
+		598210B223F38E3F00183E7A /* AIFBaselandAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFBaselandAnnotationView.h; sourceTree = "<group>"; };
+		598210B323F38E3F00183E7A /* AIFDistrictsAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFDistrictsAnnotationView.h; sourceTree = "<group>"; };
+		598210C623F3D19400183E7A /* AIFPolygonDrawingMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFPolygonDrawingMapView.m; sourceTree = "<group>"; };
+		598210C723F3D19400183E7A /* AIFPolygonDrawingMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFPolygonDrawingMapView.h; sourceTree = "<group>"; };
+		598210CB23F3D1A200183E7A /* AIIFPolygonDrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIIFPolygonDrawingViewController.h; sourceTree = "<group>"; };
+		598210CC23F3D1A300183E7A /* AIIFPolygonDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIIFPolygonDrawingViewController.m; sourceTree = "<group>"; };
+		598210CE23F3D28300183E7A /* AIFDrawBasePointView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIFDrawBasePointView.h; sourceTree = "<group>"; };
+		598210CF23F3D28300183E7A /* AIFDrawBasePointView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIFDrawBasePointView.m; sourceTree = "<group>"; };
+		598210D123F3D2FB00183E7A /* AIFBaseDrawViewStateObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIFBaseDrawViewStateObject.h; sourceTree = "<group>"; };
+		598210D223F3D2FB00183E7A /* AIFBaseDrawViewStateObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIFBaseDrawViewStateObject.m; sourceTree = "<group>"; };
+		598210D423F3E3C000183E7A /* AIFBaseMapDrawTopInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIFBaseMapDrawTopInfoView.h; sourceTree = "<group>"; };
+		598210D523F3E3C000183E7A /* AIFBaseMapDrawTopInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIFBaseMapDrawTopInfoView.m; sourceTree = "<group>"; };
+		598210D823F3EB1600183E7A /* UIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConfig.h; sourceTree = "<group>"; };
+		598210D923F3EB1600183E7A /* UIConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIConfig.m; sourceTree = "<group>"; };
+		598210DB23F404BE00183E7A /* AIFLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIFLocationManager.h; sourceTree = "<group>"; };
+		598210DC23F404BE00183E7A /* AIFLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIFLocationManager.m; sourceTree = "<group>"; };
+		6DD65BE697F1389FE5B1A516 /* libPods-AIFMapLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AIFMapLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		872F508B6D7E8C6BF9916CA0 /* Pods-AIFMapLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIFMapLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AIFMapLib/Pods-AIFMapLib.debug.xcconfig"; sourceTree = "<group>"; };
+		AF26E8AB23CD57BE00F4FAD6 /* AIFMapLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIFMapLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF26E8AE23CD57BE00F4FAD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AF26E8AF23CD57BE00F4FAD6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AF26E8B423CD57BE00F4FAD6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AF26E8B523CD57BE00F4FAD6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AF26E8BA23CD57BF00F4FAD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF26E8BD23CD57BF00F4FAD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF26E8BF23CD57BF00F4FAD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF26E8C023CD57BF00F4FAD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF26E8C623CD57BF00F4FAD6 /* AIFMapLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIFMapLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF26E8CA23CD57BF00F4FAD6 /* AIFMapLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIFMapLibTests.m; sourceTree = "<group>"; };
+		AF26E8CC23CD57BF00F4FAD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF26E8D123CD57BF00F4FAD6 /* AIFMapLibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIFMapLibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF26E8D523CD57BF00F4FAD6 /* AIFMapLibUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIFMapLibUITests.m; sourceTree = "<group>"; };
+		AF26E8D723CD57BF00F4FAD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF26E8ED23CD914300F4FAD6 /* AIFDistributionMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIFDistributionMapViewController.h; sourceTree = "<group>"; };
+		AF26E8EE23CD914300F4FAD6 /* AIFDistributionMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIFDistributionMapViewController.m; sourceTree = "<group>"; };
+		AF26E8F023CDA92400F4FAD6 /* AIFDistributionMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFDistributionMapView.h; sourceTree = "<group>"; };
+		AF26E8F123CDA92400F4FAD6 /* AIFMapTypeSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFMapTypeSelectView.h; sourceTree = "<group>"; };
+		AF26E8F223CDA92400F4FAD6 /* AIFDistributionMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFDistributionMapView.m; sourceTree = "<group>"; };
+		AF26E8F323CDA92400F4FAD6 /* AIFMapTypeSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFMapTypeSelectView.m; sourceTree = "<group>"; };
+		AF26E8F723CDA95900F4FAD6 /* AIFMapTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFMapTool.h; sourceTree = "<group>"; };
+		AF26E8F823CDA95900F4FAD6 /* AIFMapTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFMapTool.m; sourceTree = "<group>"; };
+		AF26E8FA23CDAA7200F4FAD6 /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF26E8A823CD57BE00F4FAD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB6519C19B46892ACED71EA /* libPods-AIFMapLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF26E8C323CD57BF00F4FAD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF26E8CE23CD57BF00F4FAD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		598210D723F3EB1600183E7A /* UIConfig */ = {
+			isa = PBXGroup;
+			children = (
+				598210D823F3EB1600183E7A /* UIConfig.h */,
+				598210D923F3EB1600183E7A /* UIConfig.m */,
+			);
+			path = UIConfig;
+			sourceTree = "<group>";
+		};
+		59B59C5223F21B730087BED5 /* PolygonDrawingMap */ = {
+			isa = PBXGroup;
+			children = (
+				59B59C5623F259B00087BED5 /* VC */,
+				59B59C5523F259AD0087BED5 /* View */,
+				59B59C5423F259A80087BED5 /* Model */,
+			);
+			path = PolygonDrawingMap;
+			sourceTree = "<group>";
+		};
+		59B59C5423F259A80087BED5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				598210D123F3D2FB00183E7A /* AIFBaseDrawViewStateObject.h */,
+				598210D223F3D2FB00183E7A /* AIFBaseDrawViewStateObject.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59B59C5523F259AD0087BED5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				598210CE23F3D28300183E7A /* AIFDrawBasePointView.h */,
+				598210CF23F3D28300183E7A /* AIFDrawBasePointView.m */,
+				598210D423F3E3C000183E7A /* AIFBaseMapDrawTopInfoView.h */,
+				598210D523F3E3C000183E7A /* AIFBaseMapDrawTopInfoView.m */,
+				598210C723F3D19400183E7A /* AIFPolygonDrawingMapView.h */,
+				598210C623F3D19400183E7A /* AIFPolygonDrawingMapView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		59B59C5623F259B00087BED5 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				598210CB23F3D1A200183E7A /* AIIFPolygonDrawingViewController.h */,
+				598210CC23F3D1A300183E7A /* AIIFPolygonDrawingViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		AF26E8A223CD57BE00F4FAD6 = {
+			isa = PBXGroup;
+			children = (
+				AF26E8AD23CD57BE00F4FAD6 /* AIFMapLib */,
+				AF26E8C923CD57BF00F4FAD6 /* AIFMapLibTests */,
+				AF26E8D423CD57BF00F4FAD6 /* AIFMapLibUITests */,
+				AF26E8AC23CD57BE00F4FAD6 /* Products */,
+				BA5FA91A67F00E2B04A49EC5 /* Pods */,
+				EE2CF04DDA06FC9F823881FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF26E8AC23CD57BE00F4FAD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF26E8AB23CD57BE00F4FAD6 /* AIFMapLib.app */,
+				AF26E8C623CD57BF00F4FAD6 /* AIFMapLibTests.xctest */,
+				AF26E8D123CD57BF00F4FAD6 /* AIFMapLibUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF26E8AD23CD57BE00F4FAD6 /* AIFMapLib */ = {
+			isa = PBXGroup;
+			children = (
+				AF26E8E823CD5EBF00F4FAD6 /* Lib */,
+				AF26E8AE23CD57BE00F4FAD6 /* AppDelegate.h */,
+				AF26E8AF23CD57BE00F4FAD6 /* AppDelegate.m */,
+				AF26E8B423CD57BE00F4FAD6 /* ViewController.h */,
+				AF26E8B523CD57BE00F4FAD6 /* ViewController.m */,
+				AF26E8FA23CDAA7200F4FAD6 /* CommonHeader.h */,
+				598210D723F3EB1600183E7A /* UIConfig */,
+				AF26E8BA23CD57BF00F4FAD6 /* Assets.xcassets */,
+				AF26E8BC23CD57BF00F4FAD6 /* LaunchScreen.storyboard */,
+				AF26E8BF23CD57BF00F4FAD6 /* Info.plist */,
+				AF26E8C023CD57BF00F4FAD6 /* main.m */,
+			);
+			path = AIFMapLib;
+			sourceTree = "<group>";
+		};
+		AF26E8C923CD57BF00F4FAD6 /* AIFMapLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF26E8CA23CD57BF00F4FAD6 /* AIFMapLibTests.m */,
+				AF26E8CC23CD57BF00F4FAD6 /* Info.plist */,
+			);
+			path = AIFMapLibTests;
+			sourceTree = "<group>";
+		};
+		AF26E8D423CD57BF00F4FAD6 /* AIFMapLibUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF26E8D523CD57BF00F4FAD6 /* AIFMapLibUITests.m */,
+				AF26E8D723CD57BF00F4FAD6 /* Info.plist */,
+			);
+			path = AIFMapLibUITests;
+			sourceTree = "<group>";
+		};
+		AF26E8E823CD5EBF00F4FAD6 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				59B59C5223F21B730087BED5 /* PolygonDrawingMap */,
+				AF26E8E923CD910D00F4FAD6 /* DistributionMap */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		AF26E8E923CD910D00F4FAD6 /* DistributionMap */ = {
+			isa = PBXGroup;
+			children = (
+				AF26E8F623CDA95000F4FAD6 /* Tool */,
+				AF26E8EC23CD912600F4FAD6 /* Model */,
+				AF26E8EB23CD912200F4FAD6 /* View */,
+				AF26E8EA23CD911A00F4FAD6 /* VC */,
+			);
+			path = DistributionMap;
+			sourceTree = "<group>";
+		};
+		AF26E8EA23CD911A00F4FAD6 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				AF26E8ED23CD914300F4FAD6 /* AIFDistributionMapViewController.h */,
+				AF26E8EE23CD914300F4FAD6 /* AIFDistributionMapViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		AF26E8EB23CD912200F4FAD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				598210B223F38E3F00183E7A /* AIFBaselandAnnotationView.h */,
+				598210B023F38E3F00183E7A /* AIFBaselandAnnotationView.m */,
+				598210B323F38E3F00183E7A /* AIFDistrictsAnnotationView.h */,
+				598210B123F38E3F00183E7A /* AIFDistrictsAnnotationView.m */,
+				AF26E8F023CDA92400F4FAD6 /* AIFDistributionMapView.h */,
+				AF26E8F223CDA92400F4FAD6 /* AIFDistributionMapView.m */,
+				AF26E8F123CDA92400F4FAD6 /* AIFMapTypeSelectView.h */,
+				AF26E8F323CDA92400F4FAD6 /* AIFMapTypeSelectView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF26E8EC23CD912600F4FAD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				598210A423F38DC500183E7A /* AIFBaselandDistrictsAnnotation.h */,
+				598210A523F38DC500183E7A /* AIFBaselandDistrictsAnnotation.m */,
+				598210A923F38DC600183E7A /* AIFBaselandDistrictsBaselandAnnotation.h */,
+				598210A623F38DC500183E7A /* AIFBaselandDistrictsBaselandAnnotation.m */,
+				598210A723F38DC600183E7A /* AIFBaselandDistrictsModel.h */,
+				598210A823F38DC600183E7A /* AIFBaselandDistrictsModel.m */,
+				598210AD23F38DFA00183E7A /* AIFBaseLandDetailModel.h */,
+				598210AE23F38DFB00183E7A /* AIFBaseLandDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF26E8F623CDA95000F4FAD6 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				AF26E8F723CDA95900F4FAD6 /* AIFMapTool.h */,
+				AF26E8F823CDA95900F4FAD6 /* AIFMapTool.m */,
+				598210DB23F404BE00183E7A /* AIFLocationManager.h */,
+				598210DC23F404BE00183E7A /* AIFLocationManager.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		BA5FA91A67F00E2B04A49EC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				872F508B6D7E8C6BF9916CA0 /* Pods-AIFMapLib.debug.xcconfig */,
+				07EA758D9D7D06694296E504 /* Pods-AIFMapLib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE2CF04DDA06FC9F823881FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DD65BE697F1389FE5B1A516 /* libPods-AIFMapLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF26E8AA23CD57BE00F4FAD6 /* AIFMapLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF26E8DA23CD57BF00F4FAD6 /* Build configuration list for PBXNativeTarget "AIFMapLib" */;
+			buildPhases = (
+				6EB2503B6A4E2B78BD36A5C8 /* [CP] Check Pods Manifest.lock */,
+				AF26E8A723CD57BE00F4FAD6 /* Sources */,
+				AF26E8A823CD57BE00F4FAD6 /* Frameworks */,
+				AF26E8A923CD57BE00F4FAD6 /* Resources */,
+				6CDB4E4EB6B493075F226631 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIFMapLib;
+			productName = AIFMapLib;
+			productReference = AF26E8AB23CD57BE00F4FAD6 /* AIFMapLib.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF26E8C523CD57BF00F4FAD6 /* AIFMapLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF26E8DD23CD57BF00F4FAD6 /* Build configuration list for PBXNativeTarget "AIFMapLibTests" */;
+			buildPhases = (
+				AF26E8C223CD57BF00F4FAD6 /* Sources */,
+				AF26E8C323CD57BF00F4FAD6 /* Frameworks */,
+				AF26E8C423CD57BF00F4FAD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF26E8C823CD57BF00F4FAD6 /* PBXTargetDependency */,
+			);
+			name = AIFMapLibTests;
+			productName = AIFMapLibTests;
+			productReference = AF26E8C623CD57BF00F4FAD6 /* AIFMapLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF26E8D023CD57BF00F4FAD6 /* AIFMapLibUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF26E8E023CD57BF00F4FAD6 /* Build configuration list for PBXNativeTarget "AIFMapLibUITests" */;
+			buildPhases = (
+				AF26E8CD23CD57BF00F4FAD6 /* Sources */,
+				AF26E8CE23CD57BF00F4FAD6 /* Frameworks */,
+				AF26E8CF23CD57BF00F4FAD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF26E8D323CD57BF00F4FAD6 /* PBXTargetDependency */,
+			);
+			name = AIFMapLibUITests;
+			productName = AIFMapLibUITests;
+			productReference = AF26E8D123CD57BF00F4FAD6 /* AIFMapLibUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF26E8A323CD57BE00F4FAD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = yuankai;
+				TargetAttributes = {
+					AF26E8AA23CD57BE00F4FAD6 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					AF26E8C523CD57BF00F4FAD6 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = AF26E8AA23CD57BE00F4FAD6;
+					};
+					AF26E8D023CD57BF00F4FAD6 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = AF26E8AA23CD57BE00F4FAD6;
+					};
+				};
+			};
+			buildConfigurationList = AF26E8A623CD57BE00F4FAD6 /* Build configuration list for PBXProject "AIFMapLib" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF26E8A223CD57BE00F4FAD6;
+			productRefGroup = AF26E8AC23CD57BE00F4FAD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF26E8AA23CD57BE00F4FAD6 /* AIFMapLib */,
+				AF26E8C523CD57BF00F4FAD6 /* AIFMapLibTests */,
+				AF26E8D023CD57BF00F4FAD6 /* AIFMapLibUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF26E8A923CD57BE00F4FAD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF26E8BE23CD57BF00F4FAD6 /* LaunchScreen.storyboard in Resources */,
+				AF26E8BB23CD57BF00F4FAD6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF26E8C423CD57BF00F4FAD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF26E8CF23CD57BF00F4FAD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CDB4E4EB6B493075F226631 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIFMapLib/Pods-AIFMapLib-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIFMapLib/Pods-AIFMapLib-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AIFMapLib/Pods-AIFMapLib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EB2503B6A4E2B78BD36A5C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AIFMapLib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF26E8A723CD57BE00F4FAD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF26E8F523CDA92400F4FAD6 /* AIFMapTypeSelectView.m in Sources */,
+				AF26E8B623CD57BE00F4FAD6 /* ViewController.m in Sources */,
+				AF26E8B023CD57BE00F4FAD6 /* AppDelegate.m in Sources */,
+				AF26E8EF23CD914300F4FAD6 /* AIFDistributionMapViewController.m in Sources */,
+				598210AA23F38DC600183E7A /* AIFBaselandDistrictsAnnotation.m in Sources */,
+				598210AC23F38DC600183E7A /* AIFBaselandDistrictsModel.m in Sources */,
+				598210D323F3D2FB00183E7A /* AIFBaseDrawViewStateObject.m in Sources */,
+				598210D623F3E3C000183E7A /* AIFBaseMapDrawTopInfoView.m in Sources */,
+				598210C923F3D19500183E7A /* AIFPolygonDrawingMapView.m in Sources */,
+				598210B423F38E3F00183E7A /* AIFBaselandAnnotationView.m in Sources */,
+				598210DA23F3EB1600183E7A /* UIConfig.m in Sources */,
+				598210D023F3D28300183E7A /* AIFDrawBasePointView.m in Sources */,
+				AF26E8F423CDA92400F4FAD6 /* AIFDistributionMapView.m in Sources */,
+				598210AB23F38DC600183E7A /* AIFBaselandDistrictsBaselandAnnotation.m in Sources */,
+				598210B523F38E3F00183E7A /* AIFDistrictsAnnotationView.m in Sources */,
+				598210AF23F38DFB00183E7A /* AIFBaseLandDetailModel.m in Sources */,
+				598210CD23F3D1A300183E7A /* AIIFPolygonDrawingViewController.m in Sources */,
+				AF26E8F923CDA95900F4FAD6 /* AIFMapTool.m in Sources */,
+				AF26E8C123CD57BF00F4FAD6 /* main.m in Sources */,
+				598210DD23F404BE00183E7A /* AIFLocationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF26E8C223CD57BF00F4FAD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF26E8CB23CD57BF00F4FAD6 /* AIFMapLibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF26E8CD23CD57BF00F4FAD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF26E8D623CD57BF00F4FAD6 /* AIFMapLibUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF26E8C823CD57BF00F4FAD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF26E8AA23CD57BE00F4FAD6 /* AIFMapLib */;
+			targetProxy = AF26E8C723CD57BF00F4FAD6 /* PBXContainerItemProxy */;
+		};
+		AF26E8D323CD57BF00F4FAD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF26E8AA23CD57BE00F4FAD6 /* AIFMapLib */;
+			targetProxy = AF26E8D223CD57BF00F4FAD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF26E8BC23CD57BF00F4FAD6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF26E8BD23CD57BF00F4FAD6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF26E8D823CD57BF00F4FAD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AF26E8D923CD57BF00F4FAD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF26E8DB23CD57BF00F4FAD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 872F508B6D7E8C6BF9916CA0 /* Pods-AIFMapLib.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WU2WFZ2B66;
+				INFOPLIST_FILE = AIFMapLib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.het.AIFMapLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = developAll;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF26E8DC23CD57BF00F4FAD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07EA758D9D7D06694296E504 /* Pods-AIFMapLib.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WU2WFZ2B66;
+				INFOPLIST_FILE = AIFMapLib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.het.AIFMapLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = developAll;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF26E8DE23CD57BF00F4FAD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ76J9KE2J;
+				INFOPLIST_FILE = AIFMapLibTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.het.AIFMapLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIFMapLib.app/AIFMapLib";
+			};
+			name = Debug;
+		};
+		AF26E8DF23CD57BF00F4FAD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ76J9KE2J;
+				INFOPLIST_FILE = AIFMapLibTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.het.AIFMapLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIFMapLib.app/AIFMapLib";
+			};
+			name = Release;
+		};
+		AF26E8E123CD57BF00F4FAD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ76J9KE2J;
+				INFOPLIST_FILE = AIFMapLibUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.het.AIFMapLibUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AIFMapLib;
+			};
+			name = Debug;
+		};
+		AF26E8E223CD57BF00F4FAD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ76J9KE2J;
+				INFOPLIST_FILE = AIFMapLibUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.het.AIFMapLibUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AIFMapLib;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF26E8A623CD57BE00F4FAD6 /* Build configuration list for PBXProject "AIFMapLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF26E8D823CD57BF00F4FAD6 /* Debug */,
+				AF26E8D923CD57BF00F4FAD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF26E8DA23CD57BF00F4FAD6 /* Build configuration list for PBXNativeTarget "AIFMapLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF26E8DB23CD57BF00F4FAD6 /* Debug */,
+				AF26E8DC23CD57BF00F4FAD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF26E8DD23CD57BF00F4FAD6 /* Build configuration list for PBXNativeTarget "AIFMapLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF26E8DE23CD57BF00F4FAD6 /* Debug */,
+				AF26E8DF23CD57BF00F4FAD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF26E8E023CD57BF00F4FAD6 /* Build configuration list for PBXNativeTarget "AIFMapLibUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF26E8E123CD57BF00F4FAD6 /* Debug */,
+				AF26E8E223CD57BF00F4FAD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF26E8A323CD57BE00F4FAD6 /* Project object */;
+}
